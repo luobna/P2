@@ -63,7 +63,7 @@ p {
 
 .search {
     height: 44px;
-    width: 162px;
+    width: 100%;
     font-weight: bold;
     font-size: 15px;
     color: black;
@@ -533,8 +533,9 @@ footer {
 
 }
 
+/*VOIR APRES
 @media (max-width: 446px) {
-    
+
     nav ul{
         border-bottom: 2px solid #DEEBFF;
     }
