@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    width: 140px;
+    text-align: center;
+    padding: 10px 0px;
+}
+nav ul li:hover{
+    border-top: 2px solid;
+    color: #0065FC;
+}
+
+
+.child1 {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-evenly;
+}
+
+.child2 {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-evenly;
+}
+
+.heart {
+    width: 20px;
+}
+
+.money {
+    width: 20px;
+}
+
+.person {
+    width: 20px;
+}
+
+.fire {
+    width: 20px;
+}
+
+.filterTitle {
+    display: block;
+}
