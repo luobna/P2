@@ -208,6 +208,10 @@ p {
 
 
 
+
+
+
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -231,6 +235,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
 
 .section-title {
     margin: 0;
@@ -260,6 +265,12 @@ a {
     color: var(--main-bg-color)
 }
 
+
+
+
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -273,6 +284,11 @@ a {
     box-sizing: border-box;
 }
 
+
+
+
+
+
 /****** Hebergemets ***********/
 .hebergements {
     width: 65%;
@@ -284,55 +300,66 @@ h2 {
     margin-bottom: 37px;
 }
 
-.hebergements-cards img {
-    width: 93%;
-    height: 123px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 5px;
-    margin-left: 7px;
-}
-
-.titreetphrase h3 {
-    margin-top: 10px;
-    font-size: 17px;
-}
-
-.titreetphrase p {
-    margin-top: -9px;
-    margin-bottom: 4px;
-}
-article img{
-    margin-top: 27px;
-}
-.blanc{
-    background-color: white;
-    width: 97%;
-    border-radius: 20px;
-    height: 230px;
-    margin-bottom: 44px;
-    margin-left: 5px;
-    margin-right: 26px;
-}
-.blanc img{
+.blanc img {
     object-fit: cover;
 }
-strong{
+
+.afficherplus {
     font-weight: bold;
 }
-.titreetphrase{
-    margin-right: -9px;
-    margin-left: 15px;
+
+.blanc {
+    background-color: white;
+    border-radius: 17px;
+    width: 235px;
+    height: 245px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+    transition: background-color 500ms;
 }
-.bloc1{
-    display: inline-flex;
+
+.blanc:hover {
+    background-color: #d2e7f4;
 }
-.bloc2{
-    display: inline-flex;
+
+.hebergements-cards img {
+    width: 235px;
+    height: 140px;
+    border-radius: 12px 12px 0px 0px;
 }
-.afficherplus{
+
+.e {
     font-weight: bold;
 }
+
+h4 {
+    font-weight: normal;
+}
+
+.hebergements-cards h3,
+.hebergements-cards h4,
+.reviews {
+    margin: 10px 15px 0px 15px;
+}
+
+.hebergements-cards {
+    display: flex;
+    height: 650px;
+    flex-wrap: wrap;
+    margin-bottom: -32px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -357,7 +384,7 @@ strong{
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 188px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -384,19 +411,49 @@ strong{
     margin-bottom: 5px;
 }
 
-.element2{
-    margin-left: 20px;
-}
-.element2 img{
-    width: 102%;
-    margin-left: -14px;
-}
+
+
+
+
+
+
 
 
 
 
 
 /*ACTIVITES*/
+
+.titreactivite {
+    font-size: 22px;
+    margin-top: 63px;
+    margin-bottom: 35px;
+    margin-left: 29px;
+}
+
+.blocactivites {
+    display: flex;
+    gap: 2em;
+    margin-left: 40px;
+    margin-bottom: 57px;
+}
+
+.blocactivites img {
+    height: 400px;
+    width: 315px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tousbloc {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.blocactivites h4 {
+    font-weight: bold;
+    margin-left: 17px;
+}
 
 
 
@@ -437,16 +494,52 @@ footer {
 
 
 
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 
+@media (max-width: 1430px) {
+    .blanc {
+        width: 28%;
+        height: 39%;
+    }
 
+    .hebergements-cards img {
+        width: 100%;
+        height: 49%;
+
+    }
+}
+
+@media (max-width: 1250px) {
+    .blanc {
+        height: 42%;
+    }
+
+    .hebergements-cards img {
+        height: 48%;
+
+    }
+
+    .hebergements-cards {
+        margin-bottom: -15px;
+    }
+
+    .hebergements-cards h3,
+    .hebergements-cards h4,
+    .reviews {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 1024px) {
     /*TABLETTE*/
 
+    .hebergements {
+        width: auto;
+    }
 
     /*filter*/
 
@@ -454,8 +547,6 @@ footer {
         display: flex;
 
     }
-
-
 
     /*BLOC HEBERGEMENTS ET POPULAIRES*/
 
@@ -613,15 +704,10 @@ footer {
         margin: auto;
     }
 
-
     .iconephrase {
         padding-top: 15px;
         margin-left: 16px;
     }
-
-
-
-
 
     .footer-columns {
         display: block;
