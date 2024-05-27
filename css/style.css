@@ -121,10 +121,9 @@ p {
     font-weight: bold;
     font-size: 15px;
     color: black;
-    text-align: center;
     border-width: 0px;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .boutonrechercher {
@@ -260,11 +259,10 @@ p {
 .hebergements {
     width: 65%;
 }
-
-h2hebergement {
+.h2hebergement{
+    margin-top: 0px;
+    margin-bottom: 30px;
     font-size: 22px;
-    margin-top: 1px;
-    margin-bottom: 35px;
 }
 
 .blanc img {
@@ -274,8 +272,8 @@ h2hebergement {
 .blanc {
     background-color: white;
     border-radius: 15px;
-    width: calc(33.33% - 30px);
-    height: 250px;
+    width: calc(34.33% - 30px);
+    height: 245px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     cursor: pointer;
@@ -300,11 +298,14 @@ h4 {
     font-weight: normal;
 }
 
-.hebergements-cards h3,
+.hebergements-cards h3{
+    font-size:16px;  
+}
+
 .hebergements-cards h4,
 .reviews {
-    font-size:16px;
-    margin: 10px 15px 0px 15px;
+    font-size:15px;
+    margin: 15px 0px 0px 0px;
 }
 
 .hebergements-cards {
@@ -368,13 +369,13 @@ h4 {
 
 .titreactivite {
     font-size: 22px;
-    margin: 2em 0 1em;
+    margin: 2em 25px 1em;
     width: 100%;
 }
 
 .blocactivites {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: wrap;
 }
 
@@ -406,7 +407,7 @@ h4 {
 /*FOOTER*/
 
 footer {
-    margin-top: 15px;
+    margin-top: 35px;
     background: #f2f2f2;
     padding: 10px;
 }
@@ -440,28 +441,7 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-
 @media (max-width: 1440px) {
-    .h2hebergement{
-        margin-top: 5px;
-        margin-bottom: 35px;
-    }
-    .position{
-        padding-top: 20px;
-    }
-    .hebergements-cards {
-        margin-bottom: 77px;
-    }
-    .blanc {
-        width: 28%;
-    }
-
-    .hebergements-cards img {
-        width: 100%;
-        height: 49%;
-
-    }
-
     .blocactivites {
         margin-right: 20px;
     }
@@ -477,7 +457,6 @@ footer {
 }
 
 
-
 @media (max-width: 1024px) {
 
     /*TABLETTE*/
@@ -489,6 +468,9 @@ footer {
 
     .filtreglobal {
         display: flex;
+    }
+    .filtreglobal div{
+        font-size: 15px;
     }
 
     /*BLOC HEBERGEMENTS ET POPULAIRES*/
@@ -510,7 +492,7 @@ footer {
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
     }
 
     .populaires-cards .card-title {
@@ -621,24 +603,44 @@ footer {
 
     .filtreglobal div {
         width: 35%;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 
     .iconephrase {
         padding-top: 15px;
         margin-left: 20px;
     }
+    .hebergements-and-populaires section{
+        border-radius: 0px;
+        margin-top: 30px;
+    }
     .hebergements-and-populaires{
         margin-top: -40px;
+        
+    }
+    .h2hebergement{
+        font-size: 22px;
+        margin-bottom: 20px;
+        margin-left: -15px;
     }
     .hebergements{
-        order: 2;    
+        order: 2; 
+        background-color: white !important;
+    }
+    .section-title{
+        margin: -15px;
     }
     .populaires{
         order: 1;
     }
     .blanc{
         width: 100%;
+    }
+    .afficherplus{
+        font-size: 18px;
+        margin-top: -60px;
+        padding-left: 0px;
+        margin-bottom: 0px;
     }
     .populaires-cards {
         display: flex;
@@ -647,10 +649,13 @@ footer {
     .populaires-cards a {
         width: 100%;
     }
+    .titreactivite{
+        padding-left: 0px;
+    }
 
     .blocactivites {
         display: block;
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
 
     .blocactivites img {
@@ -658,16 +663,16 @@ footer {
         height: 147px;
     }
     .tousbloc {
-        width: 100%;
+        width: 90%;
         margin: auto;
         margin-bottom: 20px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .blocactivites h4 {
         text-align: start;
         margin: 10px 0px 0px 10px;
         padding-bottom: 15px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .footer-columns {
         display: block;
@@ -676,7 +681,7 @@ footer {
     .h3footer{
         margin-left: 5px;
         margin-top: 5px;
-        font-size: 21px;
+        font-size: 20px;
     }
     .footer-column li {
         margin-bottom: 10px;
@@ -684,4 +689,5 @@ footer {
     .footer-column ul{
         margin-bottom: 35px;
     }
+
 }
