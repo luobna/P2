@@ -24,7 +24,7 @@ ul {
 }
 
 body {
-    padding: 0 50px;
+    padding: 0 30px;
     margin: 0px;
 }
 
@@ -102,10 +102,6 @@ nav ul li:hover {
     margin-top: -40px
 }
 
-p {
-    margin-top: -15px;
-}
-
 .icone {
     height: 20px;
 }
@@ -178,7 +174,7 @@ p {
 }
 
 .filtreglobal div:hover {
-    background0: #DEEBFF;
+    background: #DEEBFF;
     cursor: pointer;
 }
 
@@ -272,12 +268,18 @@ p {
 .blanc {
     background-color: white;
     border-radius: 15px;
-    width: calc(34.33% - 30px);
-    height: 245px;
+    width: calc(33.33% - 20px);
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     cursor: pointer;
     transition: background-color 500ms;
+    padding-bottom: 10px;
+}
+.blanc>div{
+    margin-left: 5px;
+}
+.blanc>div>*{
+    margin: 10px 0 0;
 }
 
 .blanc:hover {
@@ -286,7 +288,7 @@ p {
 
 .hebergements-cards img {
     width: 100%;
-    height: 130px;
+    height: 110px;
     border-radius: 12px 12px 0px 0px;
 }
 
@@ -299,21 +301,18 @@ h4 {
 }
 
 .hebergements-cards h3{
-    font-size:16px;  
+    font-size:15px;  
 }
 
 .hebergements-cards h4,
 .reviews {
     font-size:15px;
-    margin: 15px 0px 0px 0px;
 }
 
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px 15px;
-    margin-bottom: 75px;
 }
 .afficherplus {
     font-weight: bold;
@@ -337,7 +336,7 @@ h4 {
 
 .populaires-cards img {
     width: 33%;
-    height: 188px;
+    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
